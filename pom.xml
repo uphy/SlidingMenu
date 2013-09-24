@@ -11,7 +11,7 @@
 	<groupId>com.jeremyfeinstein.slidingmenu</groupId>
 	<artifactId>parent</artifactId>
 	<packaging>pom</packaging>
-	<version>1.3-SNAPSHOT</version>
+	<version>1.3</version>
 
 	<name>SlidingMenu (Parent)</name>
 	<description>SlidingMenu is an Open Source Android library that allows developers to easily create applications with sliding menus like those made popular in the Google+, YouTube, and Facebook apps.</description>
@@ -20,7 +20,6 @@
 
 	<modules>
 		<module>library</module>
-		<module>library-maps-support</module>
 	</modules>
 
 	<scm>
@@ -94,5 +93,13 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+
+	<distributionManagement>
+    	<repository>
+			<id>uphyjp-thirdparty</id>
+			<name>uphy.jp - SNAPSHOT</name>
+			<url>http://uphy.jp/nexus/content/repositories/thirdparty/</url>
+		</repository>
+	</distributionManagement>
 
 </project>
